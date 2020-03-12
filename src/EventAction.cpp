@@ -1,17 +1,28 @@
 // -----------------------------------------------------------------------------
 //  G4Basic | EventAction.cpp
 //
-//  User run action class.
+//
+//   * Author: Justo Martin-Albo
+//   * Creation date: 15 Aug 2019
 // -----------------------------------------------------------------------------
 
 #include "EventAction.h"
 
-#include <G4Run.hh>
+
+EventAction::EventAction(): G4UserEventAction()
+{
+}
+
+
+EventAction::~EventAction()
+{
+}
 
 
 void EventAction::BeginOfEventAction(const G4Event*)
 {
 }
+
 
 void EventAction::EndOfEventAction(const G4Event*)
 {

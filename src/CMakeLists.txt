@@ -1,8 +1,15 @@
-## -----------------------------------------------------------------------------
+## ---------------------------------------------------------
 ##  G4Basic | src/CMakeLists.txt
 ##
-##
-## -----------------------------------------------------------------------------
+##  CMake build script.
+##   * Author: Justo Martin-Albo
+##   * Creation date: 14 Aug 2019
+## ---------------------------------------------------------
 
-file(GLOB SRCS ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
-add_library(G4BASIC_SRC OBJECT ${SRCS})
+SET(SRC   DetectorConstruction.cpp
+          EventAction.cpp
+          PrimaryGeneration.cpp
+          RunAction.cpp
+          SteppingAction.cpp)
+
+add_library(${CMAKE_PROJECT_NAME} OBJECT ${SRC})

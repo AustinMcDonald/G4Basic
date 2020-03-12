@@ -1,0 +1,20 @@
+#  Created by austin mcdonald on 8/18/19.
+# https://github.com/jmalbos/G4Basic
+/Inputs/ion_energy 10.
+
+/Inputs/output_file OutTest.txt
+
+/Inputs/density 0.8275
+/Inputs/pressure 1.0
+/Inputs/temperature 293.2
+
+# Macro file for G4Basic
+#
+# Initialize kernel
+/run/initialize
+#
+/tracking/verbose 2
+#
+/run/beamOn 100
+
+
